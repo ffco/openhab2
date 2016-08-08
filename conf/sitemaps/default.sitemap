@@ -1,0 +1,14 @@
+sitemap demo label="Our house"
+{
+ Frame label="Times" {
+		Text item=Sunrise_Time
+		Text item=Sunset_Time
+ Frame {
+ Group item=gGF label="Ground Floor" icon="groundfloor"
+ Group item=gFF label="First Floor" icon="firstfloor"
+ Group item=Outdoor icon="garden"
+ }
+ Frame label="Date" {
+ Text item=Date
+ }
+}
