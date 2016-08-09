@@ -20,3 +20,5 @@ DateTime Sunset_Time   "Sunset [%1$tH:%1$tM]"   { channel="astro:sun:home:set#st
 Number   Azimuth       "Azimuth"                { channel="astro:sun:home:position#azimuth" }
 Number   Elevation     "Elevation"              { channel="astro:sun:home:position#elevation" }
 String   MoonPhase     "MoonPhase"              { channel="astro:moon:home:phase#name" }
+
+Number Sensor_CPUTemp                { channel="systeminfo:computer:work:sensors#cpuTemp" }
