@@ -1,0 +1,22 @@
+Group All
+Group gGF (All)
+Group gFF (All)
+Group Outdoor (All)
+
+Group zwave (All)
+Group Temperature (All)
+
+
+Group GF_Bath "Bathroom" <bath> (gGF)
+Group GF_Hall "Hallway" <bath> (gGF)
+Group GF_Study "Study" <office> (gGF)
+
+Group FF_Bath "Bathroom" <bath> (gFF)
+Group FF_Allrum "Allrum" <livingroom> (gFF)
+Group FF_Office "Office" <office> (gFF)
+
+DateTime Sunrise_Time  "Sunrise [%1$tH:%1$tM]"  { channel="astro:sun:home:rise#start" }
+DateTime Sunset_Time   "Sunset [%1$tH:%1$tM]"   { channel="astro:sun:home:set#start" }
+Number   Azimuth       "Azimuth"                { channel="astro:sun:home:position#azimuth" }
+Number   Elevation     "Elevation"              { channel="astro:sun:home:position#elevation" }
+String   MoonPhase     "MoonPhase"              { channel="astro:moon:home:phase#name" }
